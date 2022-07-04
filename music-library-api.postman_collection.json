@@ -1,0 +1,171 @@
+{
+	"info": {
+		"_postman_id": "61a4671b-350e-4200-87a7-3f00151a1627",
+		"name": "music-library-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get all playlists",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/playlists/",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "4000",
+					"path": ["api", "playlists", ""]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get single playlist",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/playlists/1",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "4000",
+					"path": ["api", "playlists", "1"]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create new playlist",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/playlists/",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "4000",
+					"path": ["api", "playlists", ""]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update single playlist",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/playlists/1",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "4000",
+					"path": ["api", "playlists", "1"]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "remove single playlist",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/playlists/1",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "4000",
+					"path": ["api", "playlists", "1"]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "remove song from playlist",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/playlists/1/songs/2",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "4000",
+					"path": ["api", "playlists", "1", "songs", "2"]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add song to playlist",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/playlists/1/songs/",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "4000",
+					"path": ["api", "playlists", "1", "songs", ""]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all songs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/songs/",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "4000",
+					"path": ["api", "songs", ""]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get single song",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/songs/1",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "4000",
+					"path": ["api", "songs", "1"]
+				}
+			},
+			"response": []
+		}
+	]
+}

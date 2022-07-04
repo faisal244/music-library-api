@@ -1,7 +1,13 @@
 const { Router } = require("express");
 
+const {
+	addSongToPlaylist,
+	deleteSongFromPlaylist,
+} = require("../../controllers/api/handlePlaylistSongs");
+
+const router = Router();
+
 router.post("/", addSongToPlaylist);
 router.delete("/:songId", deleteSongFromPlaylist);
-const router = Router();
 
 module.exports = router;
